@@ -1,19 +1,6 @@
 ## 💗​💗​
-# Nome do fluxo de trabalho (aparece na aba Actions)
-name: generate animation
 
-# Quando esse fluxo roda
-on:
-  schedule:
-    - cron: "0 */12 * * *"   # roda automaticamente a cada 12 horas
-  workflow_dispatch:          # permite rodar manualmente pelo botão "Run workflow"
-  push:
-    branches:
-      - main                  # roda também sempre que houver um push na branch main
 
-jobs:
-  generate:
-    runs-on: ubuntu-latest    # roda numa máquina virtual Linux
 
     steps:
       # Baixa o código do repositório
